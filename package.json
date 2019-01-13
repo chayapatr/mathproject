@@ -5,8 +5,9 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "web": "webpack-dev-server"
+    "build": "npm run css && webpack",
+    "web": "npm run css && webpack-dev-server",
+    "css": "node-sass --omit-source-map-url ./src/sass/bulma.scss ./dist/css/bulma.css"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "babel-loader": "^8.0.5",
     "eslint": "^5.12.0",
     "jshint": "^2.9.7",
+    "node-sass": "^4.11.0",
     "webpack-cli": "^3.2.0",
     "webpack-dev-server": "^3.1.14"
   }

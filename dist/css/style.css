@@ -1,0 +1,13 @@
+* {
+    font-family: Oswald, 'roboto mono';
+}
+
+#title {
+    font-size: 15vh
+}
+
+@media only screen and (max-width: 405px) {
+    #hero-under-title {
+        display: none;
+    }
+}
