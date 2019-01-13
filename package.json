@@ -5,9 +5,10 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run css && webpack",
-    "web": "npm run css && webpack-dev-server",
-    "css": "node-sass --omit-source-map-url ./src/sass/bulma.scss ./dist/css/bulma.css"
+    "build": "npm run css && npm run copy && webpack",
+    "web": "npm run css && npm run copy && webpack-dev-server",
+    "css": "node-sass --omit-source-map-url ./src/sass/bulma.scss ./dist/css/bulma.css",
+    "copy": "cp ./src/index.html ./dist/index.html && cp ./src/style.css ./dist/css/style.css"
   },
   "author": "",
   "license": "ISC",
