@@ -4,24 +4,19 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run css && webpack",
-    "web": "webpack-dev-server",
-    "css": "node-sass --omit-source-map-url ./src/sass/bulma.scss ./dist/css/bulma.css",
-    "copy": "cp ./src/index.html ./dist/index.html && cp ./src/style.css ./dist/css/style.css"
+    "build": "parcel build ./src/index.html",
+    "dev": "parcel serve ./src/index.html",
+    "serve": "yarn run dev"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-preset-env": "^1.7.0",
     "bulma": "^0.7.2",
-    "is-odd": "^3.0.1",
-    "parcel-bundler": "^1.11.0",
-    "webpack": "^4.28.3"
+    "ui.js": "^0.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "babel-loader": "^8.0.5",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^5.12.1",
     "eslint-config-prettier": "^4.0.0",
     "eslint-config-standard": "^12.0.0",
@@ -30,11 +25,8 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "html-webpack-plugin": "^3.2.0",
-    "jshint": "^2.9.7",
     "node-sass": "^4.11.0",
-    "prettier": "^1.16.3",
-    "webpack-cli": "^3.2.0",
-    "webpack-dev-server": "^3.1.14"
+    "parcel-bundler": "^1.11.0",
+    "prettier": "^1.16.3"
   }
 }
