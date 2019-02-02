@@ -3,5 +3,5 @@ dist/
 .DS_Store
 .cache/
 yarn-error.log
-yarn.lock
+yarn.log
 src/.DS_Store
