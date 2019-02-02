@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "bulma": "^0.7.2",
+    "sieve-of-eratosthenes": "^0.0.3",
     "ui.js": "^0.1.0"
   },
   "devDependencies": {

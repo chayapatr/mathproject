@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="/style/sass/bulma.scss" />
   <link rel="stylesheet" type="text/css" href="/style/main.css" />
   <link rel="stylesheet" type="text/css" href="/style/subpage.css" />
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
@@ -79,19 +80,39 @@
             </div>
           </div>
         </section>
-        <div class="columns is-multiline buttons is-variable is-4-desktop is-2-mobile">
-          <div class="column is-4">
-            <a class="button is-warning is-inverted is-outlined is-fullwidth" href="./basic/index.html">
-              Basic</a>
+        <div class="columns is-multiline">
+          <div class="column is-1 has-text-weight-bold">
+            from
           </div>
-          <div class="column is-4">
-            <a class="button is-warning is-inverted is-outlined is-fullwidth " href="./atkin/index.html">Atkin Sieve</a>
+          <div class="column is-5">
+            <input type="number" class="input is-warning" min="2" id='from'>
           </div>
-          <div class="
-              column is-4">
-              <a class="button is-warning is-inverted is-outlined is-fullwidth">Documentation</a>
+          <div class="column is-1 has-text-weight-bold">
+            to
+          </div>
+          <div class="column is-5">
+            <input type="number" class="input is-warning" min="2" id='to'>
+          </div>
+          <div class="column is-12">
+            <a class="button is-warning is-inverted is-outlined is-fullwidth" id="button">Go</a>
           </div>
         </div>
+        <section class="hero" id="reshero">
+          <div class="hero-body">
+            <div class="container">
+              <hr />
+              <p class="title" id="result">hello</p>
+            </div>
+          </div>
+          <div class="columns is-multiline buttons">
+            <div class="column is-6">
+              <a class="button is-warning is-inverted is-outlined is-fullwidth" id="copy">Copy</a>
+            </div>
+            <div class="column is-6">
+              <a class="button is-warning is-inverted is-outlined is-fullwidth" id="backtotop">Back to Top</a>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
     <div class="hero-foot">
@@ -107,6 +128,6 @@
     </div>
   </section>
 </body>
-<script src="./script.js"></script>
+<script src="./script/script.js"></script>
 
 </html>
