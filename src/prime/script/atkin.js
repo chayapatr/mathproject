@@ -45,6 +45,7 @@ function sieveOfAtkin(limit) {
     }
 
     //primes values are the one which sieve[x] = true
+    //from kramtark's github gist
     return sieve;
 }
 
