@@ -11,10 +11,25 @@
   <link rel="stylesheet" type="text/css" href="/style/main.css" />
   <link rel="stylesheet" type="text/css" href="/style/subpage.css" />
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="/image/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/image/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/image/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/image/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/image/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/image/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/image/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/image/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/image/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/image/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ffdd57">
 </head>
 
 <body>
-  <section class="hero is-fullheight">
+  <section class="hero is-fullheight" id="head">
     <div class="hero-head">
       <section class="hero is-small is-warning">
         <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -72,7 +87,7 @@
         <p class="title is-1" id="title">
           Prime Number Generator
         </p>
-        <section class="hero is-small" id="hero-under-title">
+        <section class="hero is-small" id="underline">
           <div class="hero-body">
             <div class="container">
               <hr />
@@ -80,7 +95,7 @@
             </div>
           </div>
         </section>
-        <div class="columns is-multiline">
+        <div class="columns is-multiline" id="input">
           <div class="column is-1 has-text-weight-bold">
             from
           </div>
@@ -101,15 +116,22 @@
           <div class="hero-body">
             <div class="container">
               <hr />
-              <p class="title" id="result">hello</p>
-            </div>
-          </div>
-          <div class="columns is-multiline buttons">
-            <div class="column is-6">
-              <a class="button is-warning is-inverted is-outlined is-fullwidth" id="copy">Copy</a>
-            </div>
-            <div class="column is-6">
-              <a class="button is-warning is-inverted is-outlined is-fullwidth" id="backtotop">Back to Top</a>
+              <div class="columns is-centered">
+                <div class="column is-6">
+                  <a class="button is-success is-fullwidth" id="backtotop">Copy</a>
+                </div>
+                <div class="column is-6">
+                  <a class="button is-success is-fullwidth" id="backtotop">Documentation</a>
+                </div>
+              </div>
+              <br />
+              <p class="subtitle" id="result"></p>
+              <br />
+              <div class="columns is-centered">
+                <div class="column is-6">
+                  <a class="button is-info is-fullwidth" id="backtotop" href="#head">Back to Top</a>
+                </div>
+              </div>
             </div>
           </div>
         </section>

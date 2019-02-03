@@ -12,6 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "bulma": "^0.7.2",
+    "lodash.pullall": "^4.2.0",
+    "lodash.remove": "^4.7.0",
+    "lodash.takerightwhile": "^4.6.0",
+    "parcel-bundler": "^1.11.0",
     "sieve-of-eratosthenes": "^0.0.3",
     "ui.js": "^0.1.0"
   },
@@ -27,7 +31,6 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "node-sass": "^4.11.0",
-    "parcel-bundler": "^1.11.0",
     "prettier": "^1.16.3"
   }
 }
