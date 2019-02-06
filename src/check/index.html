@@ -10,7 +10,6 @@
   <link rel="stylesheet" type="text/css" href="/style/sass/bulma.scss" />
   <link rel="stylesheet" type="text/css" href="/style/main.css" />
   <link rel="stylesheet" type="text/css" href="/style/subpage.css" />
-  <link rel="stylesheet" href="./style/style.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/image/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/image/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/image/apple-icon-72x72.png">
@@ -62,7 +61,7 @@
                       Prime Number Checker
                     </a>
                     <hr class="navbar-divider">
-                    <a class="navbar-item" href="/equation/index.html">
+                    <a class="navbar-item">
                       Equation Solver
                     </a>
                     <a class="navbar-item">
@@ -85,7 +84,7 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <p class="title is-1" id="title">
-          Prime Number Generator
+          Prime Number Checker
         </p>
         <section class="hero is-small phone-hide">
           <div class="hero-body">
@@ -95,38 +94,20 @@
             </div>
           </div>
         </section>
-        <div class="columns is-multiline" id="input">
-          <div class="column is-1 has-text-weight-bold">
-            from
+        <div class="columns is-multiline">
+          <div class="column is-2 has-text-weight-bold">
+            input number
           </div>
-          <div class="column is-5">
-            <input type="number" class="input is-warning" min="2" id='from'>
+          <div class="column is-2">
+            <input type="number" class="input is-warning" min="1" id='input'>
           </div>
-          <div class="column is-1 has-text-weight-bold">
-            to
-          </div>
-          <div class="column is-5">
-            <input type="number" class="input is-warning" min="2" id='to'>
-          </div>
-          <div class="column is-12">
+          <div class="column is-2">
             <a class="button is-warning is-inverted is-outlined is-fullwidth" id="button">Go</a>
           </div>
-        </div>
-        <section class="hero" id="reshero">
-          <div class="hero-body">
-            <div class="container">
-              <hr class="phone-hide" />
-              <br class="phone-hide" />
+          <div class="column is-6">
               <p class="subtitle" id="result"></p>
-              <br />
-              <div class="columns is-centered">
-                <div class="column is-6">
-                  <a class="button is-info is-fullwidth" id="backtotop" href="#head">Back to Top</a>
-                </div>
-              </div>
-            </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
     <div class="hero-foot">
@@ -142,5 +123,6 @@
   </section>
 </body>
 <script src="./script/script.js"></script>
+<!--<script src="./script/checker.js"></script>-->
 
 </html>

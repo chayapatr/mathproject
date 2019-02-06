@@ -11,11 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "algebra.js": "^0.2.6",
     "bulma": "^0.7.2",
     "lodash.pullall": "^4.2.0",
     "lodash.remove": "^4.7.0",
     "lodash.takerightwhile": "^4.6.0",
     "parcel-bundler": "^1.11.0",
+    "parcel-plugin-emscripten": "^0.2.0",
     "sieve-of-eratosthenes": "^0.0.3",
     "ui.js": "^0.1.0"
   },

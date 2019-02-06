@@ -23,7 +23,7 @@
                         <a class="navbar-item" href="/prime/index.html">
                             Prime Number Generator
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="/check/index.html">
                             Prime Number Checker
                         </a>
                         <hr class="navbar-divider">

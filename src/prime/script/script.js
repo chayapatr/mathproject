@@ -7,13 +7,13 @@ import pullAll from 'lodash.pullall'
 (nav)()
 
 document.getElementById('button').addEventListener('click', () => {
-    let from = document.getElementById('from').value || 2
-    let to = document.getElementById('to').value || 100
+    let from = document.getElementById('from').value || 1
+    let to = document.getElementById('to').value || 99
     let toArr = sieve(++to)
     let fromArr = sieve(from)
     let dom = ``
-    document.getElementById('from').value = document.getElementById('from').value || 2
-    document.getElementById('to').value = document.getElementById('to').value || 100
+    document.getElementById('from').value = from
+    document.getElementById('to').value = to
     let resArr = pullAll(toArr,fromArr)
     dom = dom + `result (${resArr.length}) : `
     resArr.forEach(el => {
