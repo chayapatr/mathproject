@@ -14,7 +14,7 @@
     </div>
     <div id="nav" class="navbar-menu">
         <div class="navbar-end">
-            <div class="navbar-item">
+            <div class="navbar-item"> 
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
                         Page

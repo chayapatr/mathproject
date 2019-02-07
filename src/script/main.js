@@ -1,2 +1,2 @@
-import footerDate from './ui.js'
-(footerDate)();
+import footerDate from './ui.js';
+footerDate();

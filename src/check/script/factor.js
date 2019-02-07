@@ -1,19 +1,20 @@
 let primeFactorization = (number, result) => {
-    var result = (result || []);
-    var root = Math.sqrt(number);
-    var x = 2;
+  // eslint-disable-next-line no-redeclare
+  var result = result || [];
+  var root = Math.sqrt(number);
+  var x = 2;
 
-    if (number % x) {
-        x = 3;
+  if (number % x) {
+    x = 3;
 
-        while ((number % x) && ((x = (x + 2)) < root)) {}
-    }
+    while (number % x && (x = x + 2) < root) {}
+  }
 
-    x = (x <= root) ? x : number;
+  x = x <= root ? x : number;
 
-    result.push(x);
+  result.push(x);
 
-    return (x === number) ? result : primeFactorization((number / x), result);
+  return x === number ? result : primeFactorization(number / x, result);
 };
 
-export default primeFactorization
+export default primeFactorization;

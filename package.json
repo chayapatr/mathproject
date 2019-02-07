@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "build": "parcel build ./src/index.html",
-    "dev": "parcel serve ./src/index.html",
+    "dev": "rm -rf dist && parcel serve ./src/index.html",
     "serve": "yarn run dev"
   },
   "author": "",
