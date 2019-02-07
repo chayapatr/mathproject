@@ -19,14 +19,14 @@ document.getElementById('button').addEventListener('click', () => {
   } else {
     result.classList.add('has-text-danger');
     if (input % 1 === 0 && input !== 0 && input !== 1 && input >= 0) {
-      text = `${input} is not a prime number (`;
+      text = `${input} is not a prime number <br /> factorization : `;
       primeFactorization(input).forEach(el => {
         text = text + `${el}*`;
       });
-      text = text.substring(0, text.length - 1) + `)`;
+      text = text.substring(0, text.length - 1);
     } else {
       text = `${input} is not a prime number`;
     }
   }
-  document.getElementById('result').innerText = text;
+  document.getElementById('result').innerHTML = text;
 });

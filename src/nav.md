@@ -21,20 +21,10 @@
                     </a>
                     <div class="navbar-dropdown is-right">
                         <a class="navbar-item" href="/prime/index.html">
-                            Prime Number Generator
+                            Number Checker
                         </a>
                         <a class="navbar-item" href="/check/index.html">
                             Prime Number Checker
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Equation Solver
-                        </a>
-                        <a class="navbar-item">
-                            BMI Calc
-                        </a>
-                        <a class="navbar-item">
-                            Some Calculator
                         </a>
                     </div>
                 </div>
