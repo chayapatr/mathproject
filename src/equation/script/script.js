@@ -49,7 +49,7 @@ document.getElementById('button').addEventListener('click', () => {
 
   let answer = variable.map(el => [el, eq.solveFor(el)]);
   let outputArr = answer.map(el => `${el[0]} = ${el[1].toString()}`);
-  let text = `answer for ${eq.toString()}<br />----------------------<br />`;
+  let text = `answer for ${eq.toString()}<br />----------------<br />`;
   outputArr.forEach(el => (text = text + el + '<br />'));
   document.getElementById('reshero').style.display = 'block';
   document.getElementById('result').innerHTML = text;
